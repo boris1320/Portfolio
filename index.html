@@ -48,6 +48,16 @@ section{
     box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
 
+.card img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    border-radius:12px;
+    margin-top:15px;
+    display:block;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
 h2{
     margin-bottom:15px;
     color:#38bdf8;
@@ -60,32 +70,6 @@ ul{
 a{
     color:#38bdf8;
     text-decoration:none;
-}
-
-/* FOTO'S */
-.photo-gallery{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:20px;
-}
-
-.photo-gallery img{
-    width:250px;
-    height:180px;
-    object-fit:cover;
-    border-radius:12px;
-    transition:transform 0.3s ease;
-}
-
-.photo-gallery img:hover{
-    transform:scale(1.05);
-}
-
-.profile-photo{
-    width:250px;
-    border-radius:12px;
-    margin-top:20px;
 }
 
 footer{
@@ -105,44 +89,51 @@ footer{
 
 <section>
 
-    <!-- OVER MIJ -->
     <div class="card">
         <h2>Over mij</h2>
-
         <p>
             Hallo! Ik ben Boris. Ik zit in de brugklas en volg het vak
             O&O (Onderzoek & Ontwerpen). Op deze website laat ik mijn
             projecten, ideeën en vaardigheden zien.
         </p>
 
-        <!-- Eigen foto -->
-        <img src="images/boris.jpg" alt="Foto van Boris" class="profile-photo">
+        <img src="images/boris.jpg" alt="Foto van Boris">
     </div>
 
-    <!-- PROJECTEN -->
     <div class="card">
         <h2>Projecten</h2>
 
         <ul>
-            <li>O&O Project 1 – Langzame Knikkerbaan</li>
-            <li> We moesten toen een knikkerbaan bouwen die zo langzaam mogenlijk ging. <li>
-            <li>O&O Project 2 – Circulair Festival</li>
-            <li> We moesten iets bedenken waardoor er minder afval zou komen na een festival. <li>
-            <li>O&O Project 3 – Aqualectra Kantoortuin</li>
-            <li> We moesten een nieuwe kantoortuin of kantine ontwerpen. <li>
-            <li>O&O Project 4 – Watertoppers</li>
-            <li> We moesten een oplossing bedenken tegen blauwalg. </li>
+            <li>
+                <strong>O&O Project 1 – Langzame Knikkerbaan</strong><br>
+                We moesten een knikkerbaan bouwen die zo langzaam mogelijk ging.
+            </li>
+            <br>
+
+            <li>
+                <strong>O&O Project 2 – Circulair Festival</strong><br>
+                We moesten iets bedenken waardoor er minder afval zou ontstaan na een festival.
+            </li>
+            <br>
+
+            <li>
+                <strong>O&O Project 3 – Aqualectra Kantoortuin</strong><br>
+                We moesten een nieuwe kantoortuin of kantine ontwerpen.
+            </li>
+            <br>
+
+            <li>
+                <strong>O&O Project 4 – Watertoppers</strong><br>
+                We moesten een oplossing bedenken tegen blauwalg.
+            </li>
         </ul>
 
-        <div class="photo-gallery">
-            <img src="images/knikkerbaan.jpg" alt="Langzame Knikkerbaan">
-            <img src="images/festival.jpg" alt="Circulair Festival">
-            <img src="images/kantoortuin.jpg" alt="Aqualectra Kantoortuin">
-            <img src="images/watertoppers.jpg" alt="Watertoppers">
-        </div>
+        <img src="images/knikkerbaan.jpg" alt="Knikkerbaan">
+        <img src="images/festival.jpg" alt="Festival">
+        <img src="images/kantoortuin.jpg" alt="Kantoortuin">
+        <img src="images/watertoppers.jpg" alt="Watertoppers">
     </div>
 
-    <!-- VAARDIGHEDEN -->
     <div class="card">
         <h2>Vaardigheden</h2>
 
@@ -153,13 +144,9 @@ footer{
             <li>Mijn groepje aanspreken als ze niks doen</li>
         </ul>
 
-        <div class="photo-gallery">
-            <img src="images/samenwerken.jpg" alt="Samenwerken">
-            <img src="images/onderzoek.jpg" alt="Onderzoeken">
-        </div>
+        <img src="images/samenwerken.jpg" alt="Samenwerken">
     </div>
 
-    <!-- CONTACT -->
     <div class="card">
         <h2>Contact</h2>
 
@@ -169,10 +156,6 @@ footer{
                 github.com/jouwgebruikersnaam
             </a>
         </p>
-
-        <div class="photo-gallery">
-            <img src="images/github.jpg" alt="GitHub">
-        </div>
     </div>
 
 </section>
