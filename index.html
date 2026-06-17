@@ -4,96 +4,178 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Boris | Portfolio</title>
+
 <style>
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{
-        font-family:Arial,sans-serif;
-        background:#0f172a;
-        color:#e2e8f0;
-        line-height:1.6;
-    }
-    header{
-        text-align:center;
-        padding:80px 20px;
-        background:linear-gradient(135deg,#1e293b,#0f172a);
-    }
-    h1{
-        font-size:3rem;
-        margin-bottom:10px;
-    }
-    .subtitle{
-        color:#94a3b8;
-    }
-    section{
-        max-width:900px;
-        margin:auto;
-        padding:50px 20px;
-    }
-    .card{
-        background:#1e293b;
-        padding:25px;
-        border-radius:16px;
-        margin-top:20px;
-        box-shadow:0 4px 12px rgba(0,0,0,0.3);
-    }
-    h2{
-        margin-bottom:15px;
-        color:#38bdf8;
-    }
-    ul{
-        padding-left:20px;
-    }
-    footer{
-        text-align:center;
-        padding:30px;
-        color:#94a3b8;
-    }
-    a{
-        color:#38bdf8;
-        text-decoration:none;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#94a3b8;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:16px;
+    margin-top:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+ul{
+    padding-left:20px;
+}
+
+a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+/* FOTO'S */
+.photo-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.photo-gallery img{
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:transform 0.3s ease;
+}
+
+.photo-gallery img:hover{
+    transform:scale(1.05);
+}
+
+.profile-photo{
+    width:250px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
 </style>
 </head>
+
 <body>
+
 <header>
     <h1>Boris</h1>
     <p class="subtitle">Brugklas leerling • O&O (Onderzoek & Ontwerpen)</p>
 </header>
 
 <section>
+
+    <!-- OVER MIJ -->
     <div class="card">
         <h2>Over mij</h2>
-        <p>Hallo! Ik ben Boris. Ik zit in de brugklas en volg het vak O&O (Onderzoek & Ontwerpen). Op deze website laat ik mijn projecten, ideeën en vaardigheden zien.</p>
+
+        <p>
+            Hallo! Ik ben Boris. Ik zit in de brugklas en volg het vak
+            O&O (Onderzoek & Ontwerpen). Op deze website laat ik mijn
+            projecten, ideeën en vaardigheden zien.
+        </p>
+
+        <!-- Eigen foto -->
+        <img src="images/boris.jpg" alt="Foto van Boris" class="profile-photo">
     </div>
 
+    <!-- PROJECTEN -->
     <div class="card">
         <h2>Projecten</h2>
+
         <ul>
             <li>O&O Project 1 – Langzame Knikkerbaan</li>
-            <li>O&O Project 2 – Project Circulair festival</li>
-            <li>O&O project 3 – project Aqualectra kantoortuin</li>
-            <li>O&O Project 4 - project Watertoppers</li>
+            <li>O&O Project 2 – Circulair Festival</li>
+            <li>O&O Project 3 – Aqualectra Kantoortuin</li>
+            <li>O&O Project 4 – Watertoppers</li>
         </ul>
+
+        <div class="photo-gallery">
+            <img src="images/knikkerbaan.jpg" alt="Langzame Knikkerbaan">
+            <img src="images/festival.jpg" alt="Circulair Festival">
+            <img src="images/kantoortuin.jpg" alt="Aqualectra Kantoortuin">
+            <img src="images/watertoppers.jpg" alt="Watertoppers">
+        </div>
     </div>
 
+    <!-- VAARDIGHEDEN -->
     <div class="card">
         <h2>Vaardigheden</h2>
+
         <ul>
             <li>Samenwerken</li>
             <li>Onderzoeken</li>
-            <li>taken</li>
-            <li>mijn groepje aanspreken als ze niks doen</li>
+            <li>Taken uitvoeren</li>
+            <li>Mijn groepje aanspreken als ze niks doen</li>
         </ul>
+
+        <div class="photo-gallery">
+            <img src="images/samenwerken.jpg" alt="Samenwerken">
+            <img src="images/onderzoek.jpg" alt="Onderzoeken">
+        </div>
     </div>
 
+    <!-- CONTACT -->
     <div class="card">
         <h2>Contact</h2>
-        <p>GitHub: voeg hier je GitHub-link toe</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/jouwgebruikersnaam" target="_blank">
+                github.com/jouwgebruikersnaam
+            </a>
+        </p>
+
+        <div class="photo-gallery">
+            <img src="images/github.jpg" alt="GitHub">
+        </div>
     </div>
+
 </section>
 
 <footer>
     © 2026 Boris Portfolio
 </footer>
+
 </body>
 </html>
